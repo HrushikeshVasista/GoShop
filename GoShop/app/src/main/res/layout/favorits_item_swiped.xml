@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="200dp"
+    android:layout_height="50dp"
+    android:id="@+id/cartItemSwiped"
+    android:background="@color/colorAccent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cartItemDelete"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_delete"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="29dp"
+        android:tint="@color/black_overlay"
+        android:scaleX="1.25"
+        android:scaleY="1.25" />
+
+</RelativeLayout>

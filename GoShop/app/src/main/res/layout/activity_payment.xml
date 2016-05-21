@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+tools:context="com.cs442.Team14.PaymentActivity">
+
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="@string/payment_lbl_yourorder"
+    android:id="@+id/textView"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:textColor="#602dcd"
+    android:textSize="26dp" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="@string/payment_lbl_txn"
+    android:id="@+id/textView7"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="36dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView10"
+        android:layout_marginTop="60dp"
+        android:text="@string/payment_lbl_Items"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/payment_lbl_totalamount"
+        android:id="@+id/textView5"
+        android:textColor="#7f4545"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView7" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="$12.90"
+    android:id="@+id/payment_txt_total"
+    android:layout_above="@+id/textView11"
+    android:layout_alignEnd="@+id/textView11"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_toEndOf="@+id/textView10"
+        android:textAlignment="gravity"
+        android:gravity="right" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="$0.00"
+    android:id="@+id/textView11"
+    android:layout_alignParentEnd="true"
+    android:layout_alignTop="@+id/textView7"
+    android:layout_toEndOf="@+id/textView7"
+    android:gravity="right" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:id="@+id/payment_txt_order"
+    android:textStyle="bold"
+    android:textColor="#7f4545"
+    android:layout_alignParentEnd="true"
+    android:layout_toEndOf="@+id/textView5"
+        android:layout_alignTop="@+id/textView5"
+        android:gravity="right"
+        android:text="123" />
+
+    <Button
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_showCart"
+        android:text="@string/payment_btn_Showcart"
+        android:elevation="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:visibility="gone" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_confirmOrder"
+        android:text="@string/payment_btn_ConfirmOrder"
+        android:elevation="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:onClick="onBuyPressed"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:id="@+id/cartItemNormal"
+    android:clickable="true"
+    android:elevation="10dp"
+    android:fadingEdgeLength="10dp"
+    android:focusable="false"
+    android:background="@drawable/selection_on_higlight">
+
+    <TextView
+        android:id="@+id/cartItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="15sp"
+        android:layout_toEndOf="@+id/favPosition"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_gravity="center"
+        android:layout_weight="1.2"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:id="@+id/favPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:text="1"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/favImage"
+        android:layout_toRightOf="@+id/cartItemName"
+        android:src="@drawable/broccoli"
+        android:layout_weight="1.5"
+        android:adjustViewBounds="false"
+        android:layout_gravity="center"
+        android:padding="1dp"
+        android:scaleX="0.75"
+        android:scaleY="0.75" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/favPrice"
+        android:text="price"
+        android:textSize="15sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_weight="1.5"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        android:textAlignment="gravity"
+        android:gravity="right"
+        android:paddingRight="5dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:id="@+id/cartItemNormal"
+    android:clickable="true"
+    android:background="@drawable/selection_on_higlight"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <TextView
+        android:id="@+id/cartItemQty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:text="x 99"
+        android:layout_toEndOf="@+id/cartItemName"
+        android:textSize="15sp"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1.2"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/cartImg"
+        android:src="@drawable/broccoli"
+        android:layout_toEndOf="@+id/cartItemQty"
+        android:layout_weight="1"
+        android:layout_margin="1dp"
+        android:layout_gravity="center"
+        android:scaleX="0.75"
+        android:scaleY="0.75" />
+
+    <TextView
+        android:id="@+id/cartItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="15sp"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_weight="0.8"
+        android:layout_gravity="center"
+         />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cartItemSubtotal"
+        android:text="Subtotal"
+        android:textSize="15sp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical|center_horizontal|right"
+        android:layout_gravity="center"
+        android:layout_weight="1.1"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

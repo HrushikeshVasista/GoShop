@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InviteFriendsFragment"
+    android:background="#e9e9e9">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message"
+        android:layout_gravity="center"
+        android:text="Try out  this new app Called &quot;Go Shop&quot;z"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:gravity="start"
+        android:autoText="false"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Label2"
+        android:layout_above="@+id/invitefriendbutton"
+        android:layout_marginBottom="30sp"/>
+
+    <TextView
+        android:layout_width="241dp"
+        android:layout_height="40dp"
+        android:text="@string/text2_invitefriendsfragment"
+        android:id="@+id/Label2"
+        android:layout_gravity="right|top"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView8"
+        android:layout_alignEnd="@+id/message"
+        android:layout_marginTop="56dp"
+        android:layout_alignStart="@+id/message" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text3_invitefriendsfragment"
+        android:id="@+id/invitefriendbutton"
+        android:background="#a9a9a9"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text4_invitefriendsfragment"
+        android:id="@+id/textView8"
+        android:textSize="23sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_alignStart="@+id/Label2"
+
+        />
+
+</RelativeLayout>

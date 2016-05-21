@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/homePage"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menuActivityHome" />
+
+        <item
+            android:id="@+id/userProfile"
+            android:icon="@drawable/ic_menu_user_profile"
+            android:title="@string/menuActivityUserProfile" />
+        <item
+            android:id="@+id/cartPage"
+            android:icon="@drawable/ic_menu_cart_page"
+            android:title="@string/menuActivityCart" />
+
+        <item
+            android:id="@+id/favoritesPage"
+            android:icon="@drawable/ic_menu_favorite"
+            android:title="@string/menuActivityFavorite" />
+
+        <item
+            android:id="@+id/orderHistory"
+            android:icon="@drawable/ic_menu_history"
+            android:title="@string/menuActivityOrderHist" />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_menu_logout"
+            android:title="@string/menuActivityLogout" />
+
+        <item
+            android:id="@+id/aboutGoShop"
+            android:icon="@drawable/ic_menu_about_goshop"
+            android:title="@string/menuActivityAboutGoShop"/>
+    </group>
+
+    <item android:title="@string/menuActivityCommunicate">
+        <menu>
+            <item
+                android:id="@+id/inviteFriends"
+                android:icon="@drawable/ic_menu_invite_friend"
+                android:title="@string/menuActivityInviteFrnds" />
+
+            <!--<item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />-->
+        </menu>
+    </item>
+
+</menu>

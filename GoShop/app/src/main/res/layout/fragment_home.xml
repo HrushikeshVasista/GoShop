@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cs442.Team14.HomeFragment">
+
+
+
+    <!--    <android.support.v4.app.FragmentTabHost
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"/>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </android.support.v4.app.FragmentTabHost>-->
+
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:textSize="15pt"/>-->
+    <com.cs442.Team14.SlidingTabLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:id="@+id/sliding_tabs"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:scrollbarThumbHorizontal="@color/white"
+        android:scrollbarSize="5dp"
+        android:scrollbarTrackHorizontal="@color/white"
+        android:scrollbarThumbVertical="@color/white"
+        android:scrollbarTrackVertical="@color/white"
+        android:fadeScrollbars="true" />
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/homeFragmentPager">
+
+
+        <!--<android.support.v4.view.PagerTabStrip
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/tabsTitles"
+            android:clipToPadding="true"
+            android:clipChildren="false"
+            android:fadingEdge="horizontal"
+            android:padding="2dp"
+            android:textAlignment="gravity"
+            android:scrollbarSize="2dp"
+            android:fitsSystemWindows="true"
+            android:scrollbars="horizontal"
+            android:foregroundGravity="left|center_vertical|clip_horizontal|center"
+            android:scrollbarThumbHorizontal="@color/white">
+        </android.support.v4.view.PagerTabStrip>-->
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

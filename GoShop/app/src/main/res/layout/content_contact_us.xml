@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/abc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.cs442.Team14.ContactUsActivity"
+    android:background="@color/Black"
+    tools:showIn="@layout/activity_contact_us">
+
+    <TextView
+        android:layout_marginTop="65dp"
+        android:textColor="@color/white"
+        android:id="@+id/dev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:text="@string/dev"
+        android:textSize="8pt"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:id="@+id/created"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:text="@string/devNames"
+        android:layout_toEndOf="@+id/cartItemName"
+        android:textSize="8pt"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="35dp"
+        android:layout_alignParentTop="true"
+        android:autoLink="email" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/tv12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:text="@string/addr"
+        android:layout_toEndOf="@+id/cartItemName"
+        android:textSize="8pt"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:id="@+id/addresqwr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:text="@string/address"
+        android:layout_toEndOf="@+id/cartItemName"
+        android:textSize="8pt"
+        android:layout_marginLeft="40dp"
+        android:layout_alignParentTop="true"
+        android:autoText="false" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/getdir"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/myselector1"
+        android:id="@+id/add_map"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="40dp"
+        android:layout_alignBottom="@+id/addresqwr"
+        android:layout_toEndOf="@+id/addresqwr" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_marginTop="35dp"
+        android:id="@+id/tv22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:text="@string/fbbck"
+        android:textSize="8pt"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentTop="true" />
+
+        <RatingBar
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <!--<android.support.design.widget.TextInputLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_below="@id/ratingBar"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="40dp"
+            android:id="@+id/field2">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/fdbckTitle"
+                android:id="@+id/feedbckTitle"
+                />
+
+        </android.support.design.widget.TextInputLayout>-->
+
+        <android.support.design.widget.TextInputLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_below="@id/field2"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="40dp"
+            android:id="@+id/field3">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="@string/yourComments"
+                android:nestedScrollingEnabled="true"
+                android:id="@+id/feedbckComments"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:background="@drawable/myselector1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/paymentActivitySubmitButton"
+            android:id="@+id/submit_feedbck"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/field3" />
+
+</LinearLayout>
+</ScrollView>

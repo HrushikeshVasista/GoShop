@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="40dp"
+    android:id="@+id/orderHstoryLayout1"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/orderId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:textSize="15sp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_weight="1.2"
+        android:layout_gravity="center"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <TextView
+        android:id="@+id/items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Items"
+        android:textSize="15sp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:textSize="15sp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_weight="1.2"
+        android:layout_gravity="center"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="15sp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical|center_horizontal" />
+
+</LinearLayout>

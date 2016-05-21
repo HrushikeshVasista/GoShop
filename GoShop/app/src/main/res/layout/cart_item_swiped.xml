@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:id="@+id/cartItemSwiped"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/cartItemQuantity"
+        android:textSize="15sp"
+        android:background="@color/white"
+        android:textColor="@color/Black"
+        android:layout_marginStart="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/cartItemIncQty" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cartItemIncQty"
+        android:src="@android:drawable/arrow_up_float"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginStart="27dp"
+        android:tint="@color/white"
+        android:layout_alignTop="@+id/cartItemDelete"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/cartItemDelete" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cartItemDecQty"
+        android:src="@android:drawable/arrow_down_float"
+        android:background="@color/colorPrimaryDark"
+        android:tint="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/cartItemDelete"
+        android:layout_alignBottom="@+id/cartItemDelete" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cartItemDelete"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_delete"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="35dp"
+        android:background="@color/white"
+        android:tint="@color/colorPrimaryDark" />
+
+</RelativeLayout>
